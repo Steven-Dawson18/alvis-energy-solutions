@@ -1,8 +1,3 @@
-/* 
----------------------------------------------
-Style.css file
---------------------------------------------- 
-*/
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
 #nav-title {
@@ -101,4 +96,44 @@ body {
     #top .left-content h4 {
         font-size: 40px;
     }
+}
+
+/* 
+---------------------------------------------
+Contact
+--------------------------------------------- 
+*/
+
+.contact-information {
+background-color: #5681ba;
+border: 1px solid #5681ba;
+color: white;
+padding: 30px;
+border-radius: 8px;
+}
+
+.opening-hours {
+background-color: #5681ba;
+border: 1px solid #5681ba;
+color: white;
+padding: 30px;
+border-radius: 8px;
+margin: 0 auto;
+width: 60%;
+text-align: center;
+}
+
+.contact-form {
+padding: 20px;
+background-color: white;
+margin-bottom: 2rem;
+}
+
+h3 {
+color: #fb5849;
+text-align: center;
+}
+
+#location {
+text-align: center;
 }

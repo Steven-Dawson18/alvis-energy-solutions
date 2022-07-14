@@ -4,6 +4,10 @@
   font-family: 'Yeseva One', cursive;
 }
 
+nav {
+  background-color: #e3f2fd;
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -75,6 +79,11 @@ body {
     border-radius: 3px;
     font-weight: 600;
     transition: all .3s;
+  }
+
+  #footer {
+    text-align: center;
+    background-color: #e3f2fd;
   }
 
   @media (max-width: 993px) {

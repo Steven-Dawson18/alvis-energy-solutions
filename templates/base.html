@@ -24,35 +24,83 @@
     <title>Alvis Energy Solutions</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light nav-bg-col sticky" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-expand-lg navbar-light nav-bg-col sticky">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/"><h1 class="mx-3" id="nav-title">Alvis Energy Solutions</h1></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              {% with url_name=request.resolver_match.url_name %}
-                <!-- Home Navigation -->
-                <li class="nav-item">
-                  <a class="nav-link {% if url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
-                </li>
-                <!-- Contact Navigation -->
-                <li class="nav-item">
-                  <a class="nav-link {% if url_name == 'contact' %}active{% endif %}" href="{% url 'contact' %}">Contact</a>
-                </li>
-                <!-- Products Navigation -->
-                <li class="nav-item">
-                  <a class="nav-link {% if url_name == 'contact' %}active{% endif %}" href="">Products</a>
-                </li>
-              {% endwith %}
-            </ul>
-          </div>
+            <a class="navbar-brand" href="/"><h1 class="mx-3" id="nav-title">Alvis Energy Solutions</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  {% with url_name=request.resolver_match.url_name %}
+                    <!-- Home Navigation -->
+                    <li class="nav-item">
+                      <a class="nav-link {% if url_name == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <!-- Contact Navigation -->
+                    <li class="nav-item">
+                      <a class="nav-link {% if url_name == 'contact' %}active{% endif %}" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                    <!-- Products Navigation -->
+                    <li class="nav-item">
+                      <a class="nav-link {% if url_name == 'contact' %}active{% endif %}" href="">Products</a>
+                    </li>
+                  {% endwith %}
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
     {% block content %}
 
     {% endblock %}
-
+    <footer id="footer" class="justify-content-center">
+        <div class="container-fluid border-top justify-content-center border-dark">
+            <div class="row">
+                <div class="col-sm col-md-4">
+                    <h4>Customer Service</h4>
+                    <br>
+                    <div>
+                        <a class="text-decoration-none" href="">FAQ's</a>
+                    </div>
+                    <br>
+                    <div>
+                        <a class="text-decoration-none" href="" target="_blank" rel="noopener" aria-label="American Ale House site policy">Policy</a>
+                    </div>
+                </div>
+                <div class="col-sm col-md-4">
+                    <h4>Contact Us</h4>
+                    <br>
+                    <p>Alvis Energy Solutions
+                        <br>
+                        120-22 Wenlock Road
+                        <br>
+                        London
+                        <br>
+                        N17 GU
+                        <br>
+                        England</p>
+                        <div>
+                            <a class="text-decoration-none" href="">Contact Email</a>
+                        </div>
+                </div>
+                <div class="col-sm col-md-4">
+                    <h4>Opening Hours</h4>
+                    <br>
+                    <p>
+                        Monday - Friday: 09:00 - 16:30
+                        <br>
+                        Saturday - 09:00 - 12:00
+                        <br>
+                        Sunday - Closed
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid border-top border-dark">
+            <div class="row justify-content-center copyright">
+                <p>© Copyright Alvis Energy Solutions</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

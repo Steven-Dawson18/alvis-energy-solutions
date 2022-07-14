@@ -10,6 +10,11 @@ def home(request):
     return render(request, "home/index.html")
 
 
+def energySaving(request):
+    '''Energy Saving page view'''
+    return render(request, "home/energy_saving.html")
+
+
 def contact(request):
     '''Contact page view'''
     if request.method == "POST":

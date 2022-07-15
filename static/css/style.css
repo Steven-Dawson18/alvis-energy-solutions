@@ -145,3 +145,13 @@ text-align: center;
 #location {
 text-align: center;
 }
+
+/* 
+---------------------------------------------
+Products
+--------------------------------------------- 
+*/
+
+.product-card {
+  max-height: 400px;
+}

@@ -43,7 +43,7 @@
                     </li>
                     <!-- Products Navigation -->
                     <li class="nav-item">
-                      <a class="nav-link {% if url_name == 'contact' %}active{% endif %}" href="">Products</a>
+                      <a class="nav-link {% if url_name == 'contact' %}active{% endif %}" href="{% url 'products' %}">Products</a>
                     </li>
                   {% endwith %}
                 </ul>

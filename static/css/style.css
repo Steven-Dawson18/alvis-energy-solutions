@@ -70,10 +70,9 @@ body {
     left: 50%;
   }
   
-  .main-white-button a {
+  .main-back-button a {
     font-size: 13px;
-    color: #5b964d;
-    background-color: #fff;
+    background-color: #5681ba;
     padding: 12px 25px;
     display: inline-block;
     border-radius: 3px;
@@ -139,7 +138,7 @@ margin-bottom: 2rem;
 }
 
 h3 {
-color: #fb5849;
+color: #5681ba;
 text-align: center;
 }
 

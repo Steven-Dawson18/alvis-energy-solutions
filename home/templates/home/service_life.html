@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load static%}
+
+{% block content %}
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="card-img-top my-3" src="{% static 'images/how-long-heat-pump-last.png' %}" alt="Card image cap">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>How long does an air source heat pump last?</h3>
+                <p>For many new users, the lifespan of an air source heat pump is one of the biggest concerns besides installation price.
+
+                    After more than ten years of use, it has been proved that the service life of the air source heat pump is no problem for more than 10 years. What manufacturer's warranty period is only 5 years? What are the factors that affect the service life of an air source heat pump? Let's learn about it now.
+                </p>
+                <h3>The following are the main factors affecting the service life of air source heat pumps:</h3>
+                <p><strong>1. The running time of the unit - </strong>
+
+                    The running time of the unit generally does not exceed 12 hours. When this time is exceeded, the probability of failure of the unit will increase, and the service life will also be affected.</p>
+                <p><strong>2. Ambient temperature - </strong>
+
+                    The ambient temperature can also directly affect the service life of the unit. In case of low ambient temperature, a dedicated heat pump unit should be selected to ensure that the unit can start and operate normally in a low temperature environment. The reason why try not to use the heat pump unit for a long time when the ambient temperature is lower than -25 degrees is that is difficult for the refrigeration oil of the compressor to return to the oil. The long-term operation will easily cause the compressor to be stuck and affect the service life of the unit.</p>
+                <p><strong>3. External factors - </strong>
+
+                    This refers to the artificial reason, which is reflected in whether the installation of the unit is professional enough. During the use process, the unit should be prevented from running under high water temperature and pressure. If it is suitable for use in winter, attention should be paid to anti-freezing work. The power supply is cut off. If the power supply is cut off, we need to drain the water of the heat pump unit, so as not to affect the service life of the unit.</p>
+                <p><strong>4. The number of times the compressor starts and stops -</strong>
+
+                    The number of starts and stops of the compressor, the longest life of the unit is determined by the compressor. When the compressor is started and stopped frequently, the compressor will be impacted by overcurrent, which will reduce the life of the unit.</p>
+                
+            </div>
+            <a class="btn btn-primary justify-content-center" href="{% url 'home' %}">Back to Home</a>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

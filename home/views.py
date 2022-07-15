@@ -10,9 +10,19 @@ def home(request):
     return render(request, "home/index.html")
 
 
-def energySaving(request):
+def energy_saving(request):
     '''Energy Saving page view'''
     return render(request, "home/energy_saving.html")
+
+
+def how_it_works(request):
+    '''How it works page view'''
+    return render(request, "home/how_it_works.html")
+
+
+def service_life(request):
+    '''How long it lasts page view'''
+    return render(request, "home/service_life.html")
 
 
 def contact(request):

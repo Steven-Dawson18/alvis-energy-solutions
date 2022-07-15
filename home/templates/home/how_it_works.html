@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% load static%}
+
+{% block content %}
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="card-img-top my-3" src="{% static 'images/air-source-heat-pumps.png' %}" alt="Card image cap">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>The working process of the heat pump water heater is that after the compressor compresses the returning low-pressure refrigerant, it becomes a high-temperature and high-pressure gas and discharges it. The refrigerant becomes liquid under the continuous action of pressure, and enters the evaporator after passing through the expansion valve. Because the pressure of the evaporator drops suddenly, the liquid refrigerant quickly evaporates into a gaseous state and absorbs a large amount of heat.</p>
+                <p>
+                    At the same time, under the action of the fan, a large amount of air flows over the outer surface of the evaporator, the energy in the air is absorbed by the evaporator, the air temperature drops rapidly, and it becomes cold air and released. Then the refrigerant that has absorbed a certain amount of energy is returned to the compressor and enters the next cycle.</p>
+                <p>
+                    The air source heat pump water heater can absorb the low temperature heat energy in the air, and convert it into high temperature heat energy inside the machine, and then heat the water temperature. The air source heat pump water heater is very energy-saving, and the efficiency is also very high.
+                </p>
+                <p>Air source heat pump is one of the most advanced energy utilization products in the world today.</p>
+                <p>With the rapid development of the economy and the improvement of people's living standards, hot water for domestic use has become a necessity for people's lives. However, traditional water heaters (electric water heaters, fuel-fired water heaters, and gas water heaters) have disadvantages such as high energy consumption, high cost, and serious pollution; The operation of energy-saving and environmentally friendly solar water heaters is restricted by meteorological conditions.</p>
+                <p>The heating principle of the air source heat pump is completely different from that of the traditional solar water heater. The air source heat pump uses air, water, solar energy, etc. as the low temperature heat source. The air source heat pump uses electricity as the power to absorb heat from the low temperature side to heat the domestic water. The system is directly fed to users as hot water supply or small area heating using fan coil units. Air source heat pump is currently the best solution for large, medium and small hot water centralized supply systems in school dormitories, hotels, bathing centers and other places.</p>
+            </div>
+            <a class="btn btn-primary justify-content-center" href="{% url 'home' %}">Back to Home</a>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

@@ -5,12 +5,40 @@
   margin: 0;
 }
 
+.text-offwhite {
+  color: #F0D5C0;
+}
+
+.navbar-nav > .active > a {
+  color: #DC7364;
+}
+
+a:hover {
+  color: #DC7364;
+}
+
+a:active {
+  color: #DC7364;
+}
+
+.nav-img {
+  padding-left: 2rem;
+  max-width: 400px;
+  max-height: 100px;
+}
+
+.footer-img {
+  padding-left: 2rem;
+  max-width: 250px;
+  max-height: 60px;
+}
+
 #nav-title {
   font-family: 'Yeseva One', cursive;
 }
 
 nav {
-  background-color: #e3f2fd;
+  background-color: #094275;
 }
 
 body {
@@ -32,8 +60,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    /* width: 100%; */
-    /* height: 100%; */
   }
   
   #top .left-content .inner-content {
@@ -45,7 +71,7 @@ body {
   
   #top .left-content h4 {
     font-family: 'Dancing Script', cursive;
-    color: #fff;
+    color: #DC7364;
     font-size: 54px;
     font-weight: 700;
   }
@@ -87,7 +113,7 @@ body {
 
   #footer {
     text-align: center;
-    background-color: #e3f2fd;
+    background-color: #094275;
   }
 
   @media (max-width: 993px) {
@@ -109,6 +135,22 @@ body {
     #top .left-content h4 {
         font-size: 40px;
     }
+}
+
+@media (max-width: 440px) {
+  .nav-img {
+    padding-left: 1rem;
+    max-width: 300px;
+    max-height: 70px;
+  }
+}
+
+@media (max-width: 280px) {
+  .nav-img {
+    padding-left: 1rem;
+    max-width: 200px;
+    max-height: 50px;
+  }
 }
 
 /* 

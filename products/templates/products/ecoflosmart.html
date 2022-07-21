@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% load static%}
+
+{% block content %}
+
+<section>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col">
+          <img src="{% static 'images/ecoflo-smart-detail.png' %}" class="card-img-top" alt="Ecoflo Smart 100L Heat Pump Details">
+        </div>
+      </div>
+        <div class="row">
+            <div class="col-sm col-md-6">
+              <div class="">
+                <img src="{% static 'images/ecoflo-smart-feat.png' %}" class="card-img-top" alt="Ecoflo Smart 100L Heat Features">
+              </div>
+            </div>
+            <div class="col-sm col-md-6">
+              <div class="">
+                <img src="{% static 'images/ecoflo-smart-dets.png' %}" class="card-img-top" alt="Ecoflo Smart 100L Heat Pump Details">
+              </div>
+            </div>
+            <a class="btn btn-primary justify-content-center my-3" href="{% url 'home' %}">Back to Home</a>
+        </div>
+        
+    </div>
+</section>
+
+
+{% endblock %}

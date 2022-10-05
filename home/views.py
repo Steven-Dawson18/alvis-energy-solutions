@@ -32,10 +32,12 @@ def contact(request):
         message_email = request.POST['emailaddress']
         message = request.POST['message']
 
+        print(message_name + message_email + message)
+
         send_mail('message from ' + message_name,
                   message + ' reply to this message ' + message_email,
                   message_email,
-                  ['fullstacksteve18@gmail.com'])
+                  ['alvisenergysolutions@gmail.com'])
         messages.success(request,
                          'Email received. We will contact you shortly.')
         return render(request, "home/contact.html")
